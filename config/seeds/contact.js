@@ -45,6 +45,7 @@ export const seed = async (knex) => {
   await knex("contact_categories").insert([
     { contact_id: 1, category_id: 1 },
     { contact_id: 1, category_id: 2 },
+    { contact_id: 2, category_id: 2 },
     // ... Add more contact-category associations here
   ]);
 };
