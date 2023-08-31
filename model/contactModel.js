@@ -5,17 +5,8 @@ const loadContact = async () => {
   return await db.select("*").from("contacts");
 };
 
-const newContact = async (first_name, last_name, email, phone, company_id) => {
-  const cont = {
-    id: v4(),
-    first_name,
-    last_name,
-    email,
-    phone,
-    company_id,
-  };
-  await db("contacts").insert(cont);
-  return cont;
+const newContact = async (contact) => {
+  return await db("contacts").insert(contact);
 };
 
 export { loadContact, newContact };

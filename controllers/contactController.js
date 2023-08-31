@@ -16,7 +16,7 @@ const getContact = async (req, res) => {
 
 const addContact = async (req, res) => {
   try {
-    await addContact(req.body);
+    await newContact(req.body);
     return res
       .status(201)
       .json(helper.responseOk("Contact succesfully created"));
