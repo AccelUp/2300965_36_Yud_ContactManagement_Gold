@@ -1,23 +1,21 @@
 import { v4 } from "uuid";
-import db from "../config/db.js";
+import db from "../config/db.js"; // Correct import path
 
-class contactModel {
-  tableName = "model";
-  constructor() {}
-  async getAll() {
-    return await db(this.tableName).select("*");
-  }
+const loadContact = async () => {
+  return await db.select("*").from("contacts");
+};
 
-  async create({ title, content, author }) {
-    const newContact = {
-      id: v4(),
-      title,
-      content,
-      author,
-    };
-    await db(this.tableName).insert(newContact);
-    return newContact;
-  }
-}
+const newContact = async (first_name, last_name, email, phone, company_id) => {
+  const cont = {
+    id: v4(),
+    first_name,
+    last_name,
+    email,
+    phone,
+    company_id,
+  };
+  await db("contacts").insert(cont);
+  return cont;
+};
 
-export default contactModel;
+export { loadContact, newContact };

@@ -1,44 +1,29 @@
-import { v4 } from "uuid";;
+import { v4 } from "uuid";
+import { loadContact, newContact } from "../model/contactModel.js"; // Correct import path
+import * as helper from "../middleware/handler.js";
 
-let contactInfo = {};
-
-const getContact = (req, res) => {
-  res.json(contactInfo);
+const getContact = async (req, res) => {
+  try {
+    const contact = await loadContact();
+    return res
+      .status(200)
+      .json(helper.responseOk("Succesfully fetching all contacts", contact));
+  } catch (e) {
+    console.error("Error fetching all contacts: ", e);
+    return res.status(500).json(helper.responseError);
+  }
 };
 
-const addContact = (req, res) => {
-  const contact = req.body;
-  contactInfo.push({ ...contact, id: v4() });
-  res.send(`contact "${contact.name}" has been added successfully.`);
+const addContact = async (req, res) => {
+  try {
+    await addContact(req.body);
+    return res
+      .status(201)
+      .json(helper.responseOk("Contact succesfully created"));
+  } catch (e) {
+    console.error("Error creating contact", e);
+    return res.status(500).json(helper.responseError(e));
+  }
 };
 
-const getContactId = (req, res) => {
-  const { id } = req.params;
-  const itemFound = itemData.find((item) => item.id === id);
-  console.log(itemFound);
-  res.send(itemFound);
-};
-
-const deleteContact = (req, res) => {
-  const { id } = req.params;
-  itemData = itemData.filter((item) => item.id !== id);
-  console.log(itemData);
-  res.send(`Item with id ${id} has been deleted successfully.`);
-};
-
-const updateContact = (req, res) => {
-  const { id } = req.params;
-  const { name, toppings, price } = req.body;
-
-  const item = itemData.find((item) => item.id === id);
-
-  if (name) item.name = name;
-  if (toppings) item.toppings = toppings;
-  if (price) item.price = price;
-
-  res.send(
-    `Item with id ${id} and name ${item.name} has been updated successfully`
-  );
-};
-
-export { getContact, addContact, getContactId, deleteContact, updateContact };
+export { getContact, addContact };
