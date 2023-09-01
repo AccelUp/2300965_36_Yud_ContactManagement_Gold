@@ -41,22 +41,3 @@ export const down = (knex) => {
     .dropTable("categories")
     .dropTable("companies");
 };
-
-// export const up = async (knex) => {
-//   await knex.schema.createTable("contact", (table) => {
-//     table.uuid("id");
-//     table.string("first_name").nullable();
-//     table.string("last_name").nullable();
-//     table.string("username").notNullable();
-//     table.string("phone").notNullable();
-//     table.string("email").notNullable();
-//   });
-// };
-
-// /**
-//  * @param { import("knex").Knex }
-//  * @returns {Promise<void>}
-//  */
-// export const down = async (knex) => {
-//   await knex.schema.dropTableIfExists("contact");
-// };
