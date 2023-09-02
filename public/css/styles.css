@@ -203,7 +203,7 @@ header div h1 {
 .contact {
   display: flex;
   align-items: center;
-  height: 50rem;
+  height: 42rem;
   border: #ececec solid;
   border-top: none;
   border-bottom-left-radius: 10px;
@@ -226,14 +226,21 @@ header div h1 {
   max-width: 100%px;
   margin: 0 auto;
 }
-.name-list div {
-  /* border-right: #4e65ff solid 1px; */
+.scrollable-list {
+  width: 100%;
+  position: relative;
+  height: 36rem;
+  overflow: auto;
+  text-align: justify;
+  padding: 20px;
 }
-
 .contact-name {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+.contact-name div {
+  width: 100%;
 }
 
 .contact-name h2 {
@@ -250,6 +257,10 @@ header div h1 {
   display: flex;
   align-items: center;
   padding: 10px;
+}
+
+.contact-name li::before {
+  content: attr(data-alphabet);
 }
 
 .contact-name span {

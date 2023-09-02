@@ -6,6 +6,10 @@ const loadContact = async () => {
 };
 
 const newContact = async (contact) => {
+  const newUUID = v4();
+
+  contact.id = newUUID;
+
   return await db("contacts").insert(contact);
 };
 
