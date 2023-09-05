@@ -1,0 +1,151 @@
+/* Contact Start */
+.contact {
+  display: flex;
+  align-items: center;
+  height: 42rem;
+  border: #ececec solid;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.contact-list {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background-color: var(#ececec);
+}
+
+.contact-list div {
+  width: 100%;
+  /* padding: 0.5rem */
+}
+
+/* Name List Start */
+.name-list {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%px;
+  margin: 0 auto;
+}
+
+.scrollable-list {
+  width: 100%;
+  position: relative;
+  height: 36rem;
+  overflow: auto;
+  text-align: justify;
+  padding: 20px;
+}
+
+.contact-name {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-name div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-name h2 {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+.contact-name ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-name li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.contact-name li::before {
+  content: attr(data-alphabet);
+}
+
+.contact-name span {
+  display: block;
+  padding-left: 1rem;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+ul#contact_rendered {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style individual list items (li) if needed */
+ul#contact_rendered li {
+  margin: 5px 0;
+  padding: 5px;
+  background-color: #fff;
+  /* border: 1px solid #ddd; */
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+ul#contact_rendered li:hover {
+  background-color: #4e65ff;
+  opacity: 80%;
+  color: #fff;
+}
+
+.create-contact-button {
+  position: absolute;
+  background-color: #4e65ff;
+  border: none;
+  border-radius: 5px;
+
+  bottom: 2rem;
+  left: 46%;
+
+  height: 3rem;
+  width: 3rem;
+}
+
+.create-contact-button svg {
+  margin: 8px;
+}
+/* Style the sticky header for each alphabet section */
+.contact-name h2 {
+  position: sticky;
+  top: 0;
+  padding-left: 0.5rem;
+  background-color: #f5f5f5;
+  color: #4e65ff;
+}
+
+.contact-name img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/* Name List End */
+
+.contact-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  background-color: #4e65ff;
+  border-bottom-right-radius: 10px;
+}
+
+.contact-profile img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* Contact End */
