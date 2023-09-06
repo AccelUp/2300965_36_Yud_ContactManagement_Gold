@@ -10,6 +10,7 @@
   margin-left: 0px;
 }
 .search-bar input[type="text"] {
+  margin-top: 0;
   display: inline-block;
   margin-left: 0.5rem;
   border: none;
@@ -35,6 +36,7 @@
   height: 1.3rem;
   width: 1.3rem;
 }
+
 /* responsive*/
 @media only screen and (max-width: 828px) {
   .search-bar:hover > .search-bar input {

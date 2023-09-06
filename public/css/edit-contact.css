@@ -1,5 +1,5 @@
 /* Container Start */
-.container {
+.container-edit {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +8,7 @@
   background-color: #4e65ff;
 }
 
-.container .content-form {
+.container-edit {
   background-color: #fff;
   border-radius: 5px;
   padding: 20px;
@@ -16,19 +16,19 @@
   width: 55%;
 }
 
-.form {
+.form-edit {
   display: flex;
   flex-direction: column;
 }
 
-.row {
+.row-edit {
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
   gap: 1rem;
 }
 
-.column {
+.column-edit {
   flex: 1;
   margin-right: 10px;
 }

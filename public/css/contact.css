@@ -1,8 +1,21 @@
+.root {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --primary-color: #fff;
+  --color-1: #220c10;
+  --color-2: #506c64;
+  --color-3: #77cbb9;
+  --color-4: #75b8c8;
+  --color-5: #cdd3d5;
+}
+
 /* Contact Start */
 .contact {
   display: flex;
   align-items: center;
-  height: 42rem;
+  height: 43rem;
   border: #ececec solid;
   border-top: none;
   border-bottom-left-radius: 10px;
@@ -11,31 +24,30 @@
 
 .contact-list {
   display: flex;
-  width: 50%;
+  width: 100%;
   height: 100%;
-  background-color: var(#ececec);
+  background-color: var(--background-color);
 }
 
 .contact-list div {
   width: 100%;
-  /* padding: 0.5rem */
 }
 
 /* Name List Start */
 .name-list {
   display: flex;
   flex-direction: row;
-  max-width: 100%px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .scrollable-list {
   width: 100%;
   position: relative;
-  height: 36rem;
+  height: 38rem;
   overflow: auto;
   text-align: justify;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .contact-name {
@@ -65,15 +77,54 @@
   padding: 10px;
 }
 
+.edit-icon {
+  display: block;
+  margin: 2px;
+  padding: 4px;
+  width: 25px;
+  height: 25px;
+  background-color: #4e65ff;
+  border-radius: 5px;
+  color: white;
+}
+
+.delete-icon {
+  display: block;
+  margin: 2px;
+  padding: 4px;
+  width: 25px;
+  height: 25px;
+  background-color: tomato;
+  border-radius: 5px;
+  color: white;
+}
+
 .contact-name li::before {
   content: attr(data-alphabet);
 }
 
 .contact-name span {
   display: block;
-  padding-left: 1rem;
-  font-size: x-large;
+  font-size: large;
   font-weight: 600;
+}
+
+/* Header Contact */
+.header-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  /* width: 4rem; */
+  border-bottom: 1px #ececec solid;
+}
+
+.header-contact div {
+  display: flex;
+  width: 25rem;
+  height: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 ul#contact_rendered {
@@ -81,20 +132,29 @@ ul#contact_rendered {
   padding: 0;
 }
 
-/* Style individual list items (li) if needed */
 ul#contact_rendered li {
   margin: 5px 0;
   padding: 5px;
   background-color: #fff;
-  /* border: 1px solid #ddd; */
   border-bottom: 1px solid #ddd;
   border-radius: 5px;
 }
 
 ul#contact_rendered li:hover {
   background-color: #4e65ff;
-  opacity: 80%;
+  /* opacity: 0.8; */
   color: #fff;
+}
+
+ul#contact_rendered li span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+}
+
+.contact-phone-span {
+  font-weight: 600;
 }
 
 .create-contact-button {
@@ -102,10 +162,8 @@ ul#contact_rendered li:hover {
   background-color: #4e65ff;
   border: none;
   border-radius: 5px;
-
   bottom: 2rem;
-  left: 46%;
-
+  left: 92%;
   height: 3rem;
   width: 3rem;
 }
@@ -113,6 +171,7 @@ ul#contact_rendered li:hover {
 .create-contact-button svg {
   margin: 8px;
 }
+
 /* Style the sticky header for each alphabet section */
 .contact-name h2 {
   position: sticky;
@@ -149,3 +208,9 @@ ul#contact_rendered li:hover {
   object-fit: cover;
 }
 /* Contact End */
+
+@media only screen and (max-width: 828px) {
+  .header-contact {
+    width: 70%;
+  }
+}
