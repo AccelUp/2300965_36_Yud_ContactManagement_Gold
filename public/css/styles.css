@@ -3,6 +3,7 @@
 @import "searchbar.css";
 @import "contact.css";
 @import "contact-form.css";
+@import "edit-contact.css";
 
 /* styles.css */
 :root {
@@ -12,6 +13,11 @@
   --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
+  --color-1: #220c10;
+  --color-2: #506c64;
+  --color-3: #77cbb9;
+  --color-4: #75b8c8;
+  --color-5: #cdd3d5;
   --transition-speed: 600ms;
 }
 
