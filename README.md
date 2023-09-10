@@ -49,6 +49,14 @@ To run the application, use the following command:
    ```sh
    npm run devStart
    ```
+To seed some dummy data into the database, use command:
+  ```sh
+   cd config
+   ```
+
+  ```sh
+   npx knex seed
+   ```
 
 ## Postman Documentation
 
@@ -56,3 +64,4 @@ Below this, are the postman documentation for this project
 
 https://documenter.getpostman.com/view/28587768/2s9YC1XETp
 
+## Screenshot
