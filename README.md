@@ -8,6 +8,7 @@ Welcome to the Contact App repository! This is a web development project that fo
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Postman Documentetion](#postman-documentation)
 - [Screenshots](#screenshots)
 
 ## Introduction
@@ -36,13 +37,22 @@ The Contact App is a web-based application that allows users to store and manage
 1. Clone this repository to your local machine using:
    ```sh
    git clone https://github.com/AccelUp/binar-project-gold.git
-   
+   ```
 2. Install the project dependencies:
    ```sh
    npm i
+   ```
 
 ## Usage
 
 To run the application, use the following command:
    ```sh
    npm run devStart
+   ```
+
+## Postman Documentation
+
+Below this, are the postman documentation for this project
+
+https://documenter.getpostman.com/view/28587768/2s9YC1XETp
+
