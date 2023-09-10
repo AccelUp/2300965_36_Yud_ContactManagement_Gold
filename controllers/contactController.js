@@ -74,4 +74,5 @@ const getContactId = async (req, res) => {
     return res.status(500).json(helper.responseError);
   }
 };
+
 export { getContact, addContact, updateContact, deleteContact, getContactId };

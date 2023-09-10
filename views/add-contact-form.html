@@ -97,55 +97,58 @@
     <!-- Nav End -->
 
     <!-- Form Start -->
+
     <div class="container">
       <div class="content-form">
         <h1>Add Contact</h1>
-        <form action="#">
+        <form class="form">
           <div class="row">
             <div class="column">
               <label for="first_name1">First Name</label>
               <input
                 type="text"
-                id="first_name"
                 name="first_name"
                 placeholder="Your First Name"
+                required
               />
             </div>
             <div class="column">
               <label for="last_name">Last Name</label>
               <input
                 type="text"
-                id="last_name"
-                name="last_name1"
+                name="last_name"
                 placeholder="Your Last Name"
+                required
               />
             </div>
           </div>
           <div class="row">
             <div class="column">
               <label for="email">E-mail</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your E-mail"
-              />
+              <input type="email" name="email" placeholder="Your E-mail" />
             </div>
           </div>
           <div class="row">
             <div class="column">
-              <label for="phone">Phone</label>
+              <label for="number">Phone</label>
               <input
-                type="phone"
-                id="phone"
+                type="number"
                 name="phone"
                 placeholder="Your Phone Number"
+                required
               />
             </div>
           </div>
-          <button class="form-button" type="submit"><span>Submit</span></button>
+          <div>
+            <button class="form-button" type="submit">
+              <span>Submit</span>
+            </button>
+            <a class="form-button-cancel" href="./index.html">
+              <span>Cancel</span>
+            </a>
+          </div>
         </form>
-        <script src="./create-new-contact.js"></script>
+        <script src="./script/create-new-contact.js"></script>
       </div>
     </div>
     <!-- Form End -->

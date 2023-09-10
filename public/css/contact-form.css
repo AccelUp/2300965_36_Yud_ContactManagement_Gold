@@ -44,6 +44,7 @@ input {
 }
 
 .form-button {
+  margin: 3px 0;
   border: none;
   height: 3rem;
   width: 6rem;
@@ -53,6 +54,24 @@ input {
 }
 
 .form-button span {
+  font-size: medium;
+}
+
+.form-button-cancel {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 3px 0;
+  border: none;
+  height: 3rem;
+  width: 6rem;
+  background-color: tomato;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.form-button-cancel span {
   font-size: medium;
 }
 /* Container End */
