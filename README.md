@@ -37,4 +37,4 @@ The Contact App is a web-based application that allows users to store, manage, a
 
 1. Clone this repository to your local machine using:
    ```sh
-   git clone https://github.com/your-username/contact-app.git
+   git clone https://github.com/AccelUp/binar-project-gold.git
