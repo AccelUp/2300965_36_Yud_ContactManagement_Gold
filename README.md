@@ -9,19 +9,15 @@ Welcome to the Contact App repository! This is a web development project that fo
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Introduction
 
-The Contact App is a web-based application that allows users to store, manage, and search through their contacts. It provides an intuitive user interface for adding new contacts, editing existing ones, and quickly finding the information you need.
+The Contact App is a web-based application that allows users to store and manage contact. It provides an intuitive user interface for adding new contacts, editing existing ones, and quickly finding the Contact information you need.
 
 ## Features
 
 - Add new contacts with details like name, phone number, email, etc.
 - Edit and update contact information.
-- Search for contacts using filters or keywords.
 - Responsive design for optimal usage on various devices.
 - User-friendly interface for a seamless experience.
 
@@ -30,8 +26,10 @@ The Contact App is a web-based application that allows users to store, manage, a
 - HTML5, CSS3 for structuring and styling the app.
 - JavaScript for dynamic functionality and interactions.
 - [FontAwesome](https://fontawesome.com/) for icons.
+- [HeroIcons](https://heroicons.com/) for icons.
 - [Google Fonts](https://fonts.google.com/) for typography.
-- (Add any additional technologies or libraries used)
+- ExpressJS and NodeJS for backend handling
+- PostgreSQL as Database
 
 ## Installation
 
@@ -48,8 +46,3 @@ The Contact App is a web-based application that allows users to store, manage, a
 To run the application, use the following command:
    ```sh
    npm run devStart
-
-This will start the server, and you can access the application by opening your web browser and navigating to http://localhost:3000 (or the port you have configured).
-
-
-
