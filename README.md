@@ -42,4 +42,14 @@ The Contact App is a web-based application that allows users to store, manage, a
 2. Install the project dependencies:
    ```sh
    npm i
-   
+
+## Usage
+
+To run the application, use the following command:
+   ```sh
+   npm run devStart
+
+This will start the server, and you can access the application by opening your web browser and navigating to http://localhost:3000 (or the port you have configured).
+
+
+
