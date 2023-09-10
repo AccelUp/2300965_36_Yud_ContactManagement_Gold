@@ -9,7 +9,7 @@ Welcome to the Contact App repository! This is a web development project that fo
 - [Installation](#installation)
 - [Usage](#usage)
 - [Postman Documentetion](#postman-documentation)
-- [Screenshots](#screenshots)
+- [Screenshot](#screenshot)
 
 ## Introduction
 
@@ -55,7 +55,7 @@ To seed some dummy data into the database, use command:
    ```
 
   ```sh
-   npx knex seed
+   npx knex seed:run
    ```
 
 ## Postman Documentation
