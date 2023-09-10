@@ -1,4 +1,4 @@
-![image](https://github.com/AccelUp/binar-project-gold/assets/52312986/a03bb7ba-6d22-4186-a3a9-b85e7c2c4a17)# Contact App Project For Binar Academy
+# Contact App Project For Binar Academy
 
 Welcome to the Contact App repository! This is a web development project that focuses on creating a user-friendly and efficient application for managing contacts.
 
@@ -66,5 +66,6 @@ https://documenter.getpostman.com/view/28587768/2s9YC1XETp
 
 ## Screenshot
 
-![image](https://github.com/AccelUp/binar-project-gold/assets/52312986/be0897af-3a7e-441b-9aae-227a9819c172)
+![image](https://github.com/AccelUp/binar-project-gold/assets/52312986/fddcad7c-f1fb-4621-af62-8612218f891e)
+
 
