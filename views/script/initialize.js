@@ -78,26 +78,34 @@ const handleDelete = async (id) => {
       console.error("Error", error);
     }
   } else {
-    location.reload();
+    console.log("Contact deletion cancelled");
   }
 };
 
 // Render Contact
-const renderContacts = (markup) => {
-  const contactRendered = document.getElementById("contact_rendered");
-  contactRendered.innerHTML = markup;
+const renderContacts = async (markup) => {
+  try {
+    const contactRendered = document.getElementById("contact_rendered");
+    contactRendered.innerHTML = markup;
+  } catch (error) {
+    console.error("Error", error);
+  }
 };
 
 // Function to attach click event listeners to contact items
-const attachContactClickListeners = () => {
-  const contactItems = document.querySelectorAll("#contact_rendered li");
-  contactItems.forEach((item) => {
-    item.addEventListener("click", (event) => {
-      const selectedContact = event.getAttribute("data-contact");
+const attachContactClickListeners = async () => {
+  try {
+    const contactItems = document.querySelectorAll("#contact_rendered li");
+    contactItems.forEach((item) => {
+      item.addEventListener("click", (event) => {
+        const selectedContact = event.getAttribute("data-contact");
 
-      console.log(selectedContact);
+        console.log(selectedContact);
+      });
     });
-  });
+  } catch (error) {
+    console.log("Error", error);
+  }
 };
 
 // Fetch and render contacts when the DOM is ready
