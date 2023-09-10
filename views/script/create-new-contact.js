@@ -30,6 +30,8 @@ formContact.addEventListener("submit", async (e) => {
 
       window.location.href = "./index.html";
     } else {
+      alert("Cannot Create New Contact");
+
       console.error(
         "Failed to send data, Server returned:",
         response.statusText
